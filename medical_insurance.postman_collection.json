@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "1b59fefd-2d96-43f6-b624-861cdf862d6b",
+		"name": "medical_insurance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28221705"
+	},
+	"item": [
+		{
+			"name": "http://192.168.119.214:5004/medical_insurance/predict_charges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "bmi",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "smoker",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "northwest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.119.214:5004/medical_insurance/predict_charges",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"119",
+						"214"
+					],
+					"port": "5004",
+					"path": [
+						"medical_insurance",
+						"predict_charges"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
