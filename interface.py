@@ -7,7 +7,7 @@ import config
 
 app =Flask(__name__)
 
-@app.route('/medical_insurance')
+@app.route('/')
 def home1():
       
 
